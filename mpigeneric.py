@@ -22,6 +22,10 @@
 # order to specify the cores we set the number 1 to 4 (for 4 cores) or 8 
 # (for 8 cores) 
 #
+#
+# This script is meant to break down the flow of logic and is not meant to
+# show a proper functionally decomposed methodology to go about doing this.
+#
 #-------------------------------------------------------------------
 
 
@@ -210,6 +214,13 @@ else:
 #
 # If we are at the Master (Rank = 0) then start aggregating the results 
 # count for the search_word and print it out.
+# 
+# Starting from here, all parts are to be run on the Master. These parts
+# have currently been segregated into smaller blocks with specific comments
+# to describe what those blocks do or are used for. Each block has a
+# corresponding 'if' statement only to state that purpose, and should be
+# removed and merged to create one set of statements to be run under one
+# if statment.
 #
 
 if rank == 0:
