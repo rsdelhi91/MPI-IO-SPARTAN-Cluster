@@ -220,7 +220,7 @@ else:
 # to describe what those blocks do or are used for. Each block has a
 # corresponding 'if' statement only to state that purpose, and should be
 # removed and merged to create one set of statements to be run under one
-# if statment.
+# if statement.
 #
 
 if rank == 0:
