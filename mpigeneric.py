@@ -5,9 +5,9 @@
 # Email: sharma1@student.unimelb.edu.au
 #
 # Description: This code performs a word count on a large file (10GB)
-# containing tweets from different users. The input for this code is
+# containing tweets from multiple users. The input for this code is
 # the file_name and the search_word that the user wishes to locate.
-# Following which, dependign on the configurations specified in the PBS
+# Following which, depending on the configurations specified in the PBS
 # script, either the sequential/ serial version or the parallel version
 # of the code will be executed. 
 #
